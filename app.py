@@ -43,9 +43,9 @@ async def chat_endpoint(req: ChatRequest):
     if response.status_code == 200:
         reply = response.json()["choices"][0]["message"]["content"]
         return {"reply": reply}
+    
     else:
-        print(response.json())
         print("Groq response status:", response.status_code)
         print("Groq response body:", response.text)
-
         return {"reply": "Sorry, something went wrong with TheraBot."}
+
