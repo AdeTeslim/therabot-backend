@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # Groq API info
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama3-8b-8192"  # or "mistral-saba-24b" if terms accepted
 
